@@ -22,14 +22,16 @@
 }
 ```
 
-#### Get single project
+#### Get single project with related client
 ``` 
 {
-  client(id:"1"){
-    id
+  project(id: 1) {
     name
-    email
-    phone
+    description,
+    client {
+      name
+      email
+    }
   }
 }
 ```
