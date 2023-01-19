@@ -47,7 +47,7 @@
 }
 ```
 
-#### Create new project and return all data
+#### Create new client and return all data
 ```
 mutation {
   addClient(name: "Tony Stark", email: "ironman@gmail.com", phone: "955-365-3376") {
@@ -55,6 +55,16 @@ mutation {
     name
     email
     phone
+  }
+}
+```
+
+#### Create new project and return all data
+```
+mutation {
+  addProject(name: "Mobile App", description: "This is the project description", status: "new", clientId: "1") {
+   name
+   description
   }
 }
 ```
