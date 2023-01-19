@@ -77,3 +77,12 @@ mutation {
   }
 }
 ```
+#### Delete a project
+```
+  updateProject(id:"1",name:"Mahmud Project 1",description:"What is a description",status:completed ) {
+   name
+    description
+   status
+  }
+}
+```
