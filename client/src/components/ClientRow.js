@@ -3,7 +3,7 @@ import { FaTrash } from 'react-icons/fa';
 
 function ClientRow({client}) {
     return (
-        <tr>
+        <tr key={client.id}>
             <td>{client.name}</td>
             <td>{client.email}</td>
             <td>{client.phone}</td>

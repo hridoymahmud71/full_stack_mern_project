@@ -4,7 +4,7 @@ import Clients from './components/Clients'
 
 const client = new ApolloClient({
   uri: "http://localhost:8000/graphql",
-  cache: InMemoryCache
+  cache: new InMemoryCache()
 });
 
 function App() {
