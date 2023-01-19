@@ -46,3 +46,15 @@
   }
 }
 ```
+
+#### Create new project and return all data
+```
+mutation {
+  addClient(name: "Tony Stark", email: "ironman@gmail.com", phone: "955-365-3376") {
+    id
+    name
+    email
+    phone
+  }
+}
+```
