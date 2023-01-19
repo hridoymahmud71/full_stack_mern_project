@@ -68,3 +68,12 @@ mutation {
   }
 }
 ```
+
+#### Delete a project
+```
+mutation {
+  deleteProject(id: 1) {
+    id
+  }
+}
+```
