@@ -7,6 +7,7 @@ import { GET_PROJECT } from '../../queries/projectQueries';
 
 import ClientInfo from '../ClientInfo';
 import DeleteProjectButton from '../DeleteProjectButton';
+import EditProjectForm from '../EditProjectForm';
 
 function Project() {
 
@@ -32,6 +33,7 @@ function Project() {
                     <p className='lead'>{data.project.status}</p>
                     <ClientInfo client={data.project.client} />
                     <DeleteProjectButton projectId={data.project.id}/>
+                    <EditProjectForm project={data.project}/>
 
 
                 </div>
