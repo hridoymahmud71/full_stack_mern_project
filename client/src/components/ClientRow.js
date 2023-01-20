@@ -10,11 +10,12 @@ function ClientRow({ client }) {
     const [deleteClient] = useMutation(DELETE_CLIENT,
         {
             variables: { id: client.id },
+            // you can either refetch the list or update the cache
             refetchQueries: [{query:GET_CLIENTS}]
         })
 
     return (
-        <tr key={client.id}>
+        <tr>
             <td>{client.name}</td>
             <td>{client.email}</td>
             <td>{client.phone}</td>

@@ -4,7 +4,6 @@
   "description": "Full stack project:  Mongoose , React , Express , Graphql ",
   "main": "index.js",
   "scripts": {   
-    "dev": "nodemon server/index.js",
     "start": "node server/index.js"
   },
   "keywords": [],
