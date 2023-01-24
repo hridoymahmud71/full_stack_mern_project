@@ -38,7 +38,7 @@ const client = new ApolloClient({
 function App() {
 
   useEffect(() => {
-    console.log(process.env.API_PATH)
+    console.log("Backend Api: ",process.env.REACT_APP_API_PATH)
   }, []);
 
   return (
