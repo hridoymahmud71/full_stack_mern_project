@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from "./components/Header";
 import { ApolloProvider, ApolloClient, InMemoryCache } from '@apollo/client';
@@ -26,11 +27,20 @@ const cache = new InMemoryCache({
 });
 
 const client = new ApolloClient({
-  uri: "http://localhost:8000/graphql",
+  //uri: "http://localhost:8000/graphql",
+  uri: process.env.REACT_APP_API_PATH,
   cache: cache
 });
 
+
+
+
 function App() {
+
+  useEffect(() => {
+    console.log(process.env.API_PATH)
+  }, []);
+
   return (
     <>
       <ApolloProvider client={client}>
